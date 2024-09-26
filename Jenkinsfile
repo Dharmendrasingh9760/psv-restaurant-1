@@ -29,7 +29,7 @@ pipeline {
                 
                 stage ("Testing the Build"){
                         steps{
-                                sh 'sudo docker run -dit --name node-js -p 8081:80 nginx:latest'
+                                sh 'sudo docker run -dit --name nginx -p 8081:80 nginx:latest'
                                 
                         }
                 }
